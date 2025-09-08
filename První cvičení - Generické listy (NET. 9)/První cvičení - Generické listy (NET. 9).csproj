@@ -1,0 +1,50 @@
+﻿<!--
+  Toto je projektový soubor v tzv. SDK stylu (moderní způsob od .NET Core výš).
+  Většinu "nudných" věcí (co se dříve psaly do .csproj) si Visual Studio doplní samo.
+-->
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<!--
+      Výstup typu "Exe" říká, že jde o spustitelnou (konzolovou) aplikaci.
+      Alternativou by bylo např. "Library" pro DLL knihovnu.
+    -->
+		<OutputType>Exe</OutputType>
+
+		<!--
+      Cílový framework. "net9.0" = .NET 9.
+      Díky tomu kompilátor a běhové prostředí ví, jaké API a jazykové featury použít.
+    -->
+		<TargetFramework>net9.0</TargetFramework>
+
+		<!--
+      Výchozí (kořenový) jmenný prostor pro nové soubory v projektu.
+      Může obsahovat tečky (oddělení pod-prostorů). Tady máš dva "segmenty":
+      1) První_cvičení___Generické_listy__NET
+      2) _9_
+      Pozor: tečky v názvu nejsou "součást jména", ale oddělovač úrovní namespace.
+	  Proto i když je název "První cvičení - Generické listy (NET. 9)", tak v namespace bude "První_cvičení___Generické_listy__NET._9_".
+	  Každý znak, který nepodporuje si změní automaticky na "_".
+    -->
+		<RootNamespace>První_cvičení___Generické_listy__NET._9_</RootNamespace>
+
+		<!--
+      ImplicitUsings=enable:
+	  Opakem by bylo "disable".
+      Kompilátor "za scénou" přidá běžné usingy (global using), např. System, System.Linq atd.
+      Výhoda: méně psaní a čistší kód.
+      Pro výuku: klidně můžeš nechat i explicitní usingy v .cs souborech – budou jen "navíc".
+	  Může pomáhat v případě, že chcete mít pod kontrolou, které knihovny se používají.
+    -->
+		<ImplicitUsings>enable</ImplicitUsings>
+
+		<!--
+      Nullable=enable:
+      Zapíná "nulovou bezpečnost" pro referenční typy (string, třídy, ...).
+      Kompilátor pak varuje, když by proměnná mohla být null (např. CS8618).
+      V našem kódu to řešíme tak, že string Jmeno inicializujeme na string.Empty.
+    -->
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+</Project>
