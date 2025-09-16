@@ -20,21 +20,6 @@
 
 ---
 
-## Rychlý start (jak spustit)
-
-### Visual Studio
-1. Otevři řešení / projekt.
-2. Spusť **Debug → Start Without Debugging** (Ctrl+F5) nebo **Start Debugging** (F5).
-3. Očekávaný výstup viz níže.
-
-### .NET CLI
-```bash
-dotnet restore
-dotnet run
-```
-
----
-
 ## Struktura startovního kódu (shrnutí)
 
 - **List<string>** – ukázka přidání/odebrání a výpisu přes `String.Join`.
