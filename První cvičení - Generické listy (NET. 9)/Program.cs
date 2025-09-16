@@ -25,6 +25,15 @@ namespace První_cvičení___Generické_listy__NET._9_  // Namespace odpovídá 
             // "var" = kompilátor sám odvodí datový typ z pravé strany.
             // Zde vznikne List<string> (seznam řetězců) se 4 položkami.
 
+            /* 
+             Sekvence pro demo s vozidly (odkomentuj, pokud chceš vidět i to):
+             */
+            //------------------------------
+
+            //VehiclesDemo.Run();
+            
+            //------------------------------
+
             var list = new List<string>() { "Pepa", "Karel", "Mirek", "Kryštof" };
 
             // String.Join(",", list) spojí všechny prvky seznamu do jednoho řetězce odděleného čárkou.
@@ -47,7 +56,7 @@ namespace První_cvičení___Generické_listy__NET._9_  // Namespace odpovídá 
             // ------------------------------------------------------------
 
             // Způsob A: vytvořím prázdný objekt a vlastnosti nastavím postupně.
-            // Této operaci se říká instanceování (instantiating).
+            // Této operaci se říká instancování (instantiating).
             var s1 = new Student();       // zavolá se prázdný konstruktor
             s1.Jmeno = "Dušan"; // Pokud jsme do proměnné uložili objekt, přistupujeme k jeho vlastnostem pomocí tečky.
             s1.Body = 14;
@@ -141,6 +150,7 @@ namespace První_cvičení___Generické_listy__NET._9_  // Namespace odpovídá 
 
             // Na závěr počkáme na stisk klávesy, aby se okno hned nezavřelo (užitečné při Ctrl+F5).
             Console.ReadKey();
+
         }
 
         // ------------------------------------------------------------
